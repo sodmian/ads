@@ -1,0 +1,17 @@
+{
+  "name": "sodmian/ads",
+  "require": {
+    "lcobucci/jwt": "^4.1",
+    "vlucas/phpdotenv": "^5.3",
+    "twig/twig": "^3.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Api\\": "app/api",
+      "Controllers\\": "app/controllers",
+      "Core\\": "app/core",
+      "Models\\": "app/models",
+      "Addons\\": "app/addons"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+<div id="app" class="container">
+    <div class="row">
+        <div class="col">
+            {% set _data = data | json_encode %}
+            {% set _env = env | json_encode %}
+            <home-app :prop="{ads: '{{ _data }}', token: '{{ csrfToken }}', env: '{{ _env }}'}"></home-app>
+        </div>
+    </div>
+</div>
