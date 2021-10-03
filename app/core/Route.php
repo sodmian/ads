@@ -82,9 +82,7 @@ class Route implements IRoute
 
         preg_match('/route=([^&]*)/', $query, $route);
 
-        if (isset($route[1])) {
-            $route = explode('.', $route[1]);
-        }
+        $route = explode('.', $route[1] ?? 'home.view');
 
         //TODO: Пока не реализованы SEF-ссылки
         if ($path != '/' || !isset($route[1])) {
