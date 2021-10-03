@@ -2,6 +2,8 @@
 
 namespace Core;
 
+use Dotenv\Dotenv;
+
 abstract class Presenter
 {
     protected ?\PDO $db;
@@ -11,6 +13,8 @@ abstract class Presenter
 
     function __construct()
     {
+        Dotenv::createImmutable($_SERVER['DOCUMENT_ROOT'], '.env')->load();
+
         $this->db = Model::getInstance();
         $this->view = new View();
         $this->load = $this;

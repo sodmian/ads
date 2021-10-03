@@ -2,8 +2,6 @@
 
 namespace Core;
 
-use Dotenv\Dotenv;
-
 class Route implements IRoute
 {
     private static $controller;
@@ -12,9 +10,6 @@ class Route implements IRoute
 
     static function init()
     {
-        $dotenv = Dotenv::createImmutable($_SERVER['DOCUMENT_ROOT'], '.env');
-        $dotenv->load();
-
         self::setInstance();
 
         //TODO: Сомнительная реализация, надо подумать...
