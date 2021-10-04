@@ -80,6 +80,7 @@ export default {
     csvPreload: function () {
       let self = this;
       self.data.file = self.$refs.file.files[0];
+      self.data.errors = [];
 
       let formData = new FormData();
       formData.append('file', self.data.file);
