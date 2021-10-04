@@ -28,11 +28,7 @@ class View
     public function display(string $template, $data = [])
     {
         try {
-            try {
-                return $this->twig->render($template . '.twig', $data);
-            } catch (\Exception $e) {
-                die($e->getMessage());
-            }
+            return $this->twig->render($template . '.twig', $data);
         } catch (\Exception $e) {
             die($e->getMessage());
         }
