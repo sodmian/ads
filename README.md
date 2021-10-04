@@ -10,8 +10,7 @@
 3.	Тащим пакетами всю nodeятину через ***npm install***
 4.	Теперь мы готовы к последнему этапу – собираем все в кучу командой ***npm run build*** и переходим в браузер
 5.	Хотя, стоп. Про базу чуть не забыл) Тут не нужен дамп, так как присутствует всего лишь одна табличка
-<
-CREATE TABLE `list_ads` (
+<CREATE TABLE `list_ads` (
 	`id` INT(11) NOT NULL AUTO_INCREMENT,
 	`date` DATETIME NOT NULL DEFAULT current_timestamp(),
 	`text` TEXT NOT NULL COLLATE 'utf8_general_ci',
@@ -20,8 +19,7 @@ CREATE TABLE `list_ads` (
 )
 COLLATE='utf8_general_ci'
 ENGINE=InnoDB
-;
->
+;>
 
 # Баги есть? А если найду?
 ![Все объявления](https://skr.sh/i/031021/cEQf3ja8.jpg?download=1&name=%D0%A1%D0%BA%D1%80%D0%B8%D0%BD%D1%88%D0%BE%D1%82%2003-10-2021%2022:13:03.jpg)
