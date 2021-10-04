@@ -3,6 +3,7 @@
 namespace Controllers;
 
 use Addons\Token\Token;
+use http\Exception\RuntimeException;
 use Models;
 
 class Ads extends \Core\Presenter
@@ -76,6 +77,11 @@ class Ads extends \Core\Presenter
 
     public function csvValidation(array $data, int $key)
     {
+        if (!isset($data[1])) {
+            Log::add("Строка $key - некорректный формат разделителя\n");
+            return;
+        }
+
         list($header, $contacts) = $data;
 
         if (!empty($header)) {
