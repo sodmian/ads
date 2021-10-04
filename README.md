@@ -19,7 +19,7 @@
 )
 COLLATE='utf8_general_ci'
 ENGINE=InnoDB
-;>
+; >
 
 # Баги есть? А если найду?
 ![Все объявления](https://skr.sh/i/031021/cEQf3ja8.jpg?download=1&name=%D0%A1%D0%BA%D1%80%D0%B8%D0%BD%D1%88%D0%BE%D1%82%2003-10-2021%2022:13:03.jpg)
